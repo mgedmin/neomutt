@@ -36,6 +36,7 @@
 #include "options.h"
 #include "protos.h"
 #include "sort.h"
+#include "config/sort.h"
 
 static bool is_visible(struct Header *hdr, struct Context *ctx)
 {
