@@ -26,7 +26,7 @@
 #include "lib/lib.h"
 #include "mutt.h"
 #include "group.h"
-#include "address.h"
+#include "config/lib.h"
 #include "globals.h"
 #include "protos.h"
 #include "rfc822.h"

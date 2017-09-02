@@ -44,8 +44,9 @@
 #include <time.h>
 #include <unistd.h>
 #include "lib/lib.h"
+#include "config/lib.h"
 #include "mutt.h"
-#include "address.h"
+#include "pgp.h"
 #include "body.h"
 #include "charset.h"
 #include "crypt.h"
