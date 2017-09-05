@@ -944,7 +944,7 @@ static int msg_search(struct Context *ctx, struct Pattern *pat, int msgno)
   msg = mx_open_message(ctx, msgno);
   if (msg)
   {
-    if (OPT_THOROUGH_SEARCH)
+    if (ThoroughSearch)
     {
       /* decode the header / body */
       memset(&s, 0, sizeof(s));
@@ -1065,7 +1065,7 @@ static int msg_search(struct Context *ctx, struct Pattern *pat, int msgno)
 
     mx_close_message(ctx, &msg);
 
-    if (OPT_THOROUGH_SEARCH)
+    if (ThoroughSearch)
     {
       safe_fclose(&fp);
 #ifdef USE_FMEMOPEN
@@ -2104,7 +2104,7 @@ int mutt_search_command(int cur, int op)
     if (i > Context->vcount - 1)
     {
       i = 0;
-      if (OPT_WRAP_SEARCH)
+      if (WrapSearch)
         msg = _("Search wrapped to top.");
       else
       {
@@ -2115,7 +2115,7 @@ int mutt_search_command(int cur, int op)
     else if (i < 0)
     {
       i = Context->vcount - 1;
-      if (OPT_WRAP_SEARCH)
+      if (WrapSearch)
         msg = _("Search wrapped to bottom.");
       else
       {
