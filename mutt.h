@@ -293,7 +293,7 @@ enum QuadOptionVars
 /* flags for mutt_compose_menu() */
 #define MUTT_COMPOSE_NOFREEHEADER (1 << 0)
 
-/* flags to _mutt_select_file() */
+/* flags to mutt_select_file() */
 #define MUTT_SEL_BUFFY   (1 << 0)
 #define MUTT_SEL_MULTI   (1 << 1)
 #define MUTT_SEL_FOLDER  (1 << 2)
